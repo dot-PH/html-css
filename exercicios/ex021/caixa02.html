@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+</head>
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: dimgray;
+        margin: 0;
+    }
+
+    header {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    nav {
+        background-color: rgb(117, 116, 116);
+        padding: 3px;
+        box-shadow: 1px 1px 1px black;
+        /* horizontal, vertical, espalhamento da sombra e por fim a cor; Esta é a ordem de prescedencia da box-shadow */
+    }
+
+    /* Lembrar que quando eu quero modificar algo que está dentro da minha grouping tag, eu chamo ele com este sinal de maior ( > ) e então vou me referir ao que quero modificar, neste caso, o link do nav.*/
+
+    nav > a { 
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        margin-right: 30px;
+    }
+
+    nav > a:hover {
+        text-decoration: underline;
+    }
+
+    main {
+        background-color: white;
+        padding: 10px;
+        margin: 10px;
+        border-radius: 15px;
+    }
+
+    article {
+        background-color: lightgray;
+        padding: 5px;
+    }
+
+    article > aside {
+        background-color: rgb(177, 174, 174);
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        text-align: center;
+        padding: 5px;
+        margin: 0px;
+    }
+
+    footer > p {
+        margin: 0px;
+    }
+
+    #assuntos > p {
+        font-weight: bolder;
+        font-size: 30px;
+        color: gray;
+    }
+</style>
+<body>
+    <header> <!-- Cabeçalho -->
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+            <a href="#">Link</a>
+        </nav>
+    </header>
+    <main> <!-- Conteúdo Principal -->
+        <section id="assuntos">
+            <p>Esportes</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem quos voluptatibus ab earum fuga iusto, autem dolores laboriosam eveniet necessitatibus. Officiis aspernatur esse enim asperiores repellat et atque maiores. Adipisci.</p>
+                <aside>
+                    <p>Artigo escrito por -</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+        </section>
+    </main>
+    <footer> <!-- Rodapé -->
+        <p>Desenvolvido por Pedro Henrique.</p>
+    </footer>
+
+</body>
+</html>

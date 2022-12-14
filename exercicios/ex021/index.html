@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caixas</title>
+    <style>
+        h1 {
+            background-color: gray;
+            height: 300px;
+            width: 300px;
+            
+        /*  border-width: 10px;
+            border-style: solid;
+            border-color: lightgray; */
+            border: 10px solid lightgray;
+
+            /*padding-top: 0;
+            padding-right: 0;    Lembrando que a ordem das medidas sempre vão ser postas em sentido horário  
+            padding-bottom: 0;
+            padding-left: 0; */
+
+            padding: 10px 10px 10px 10px;  /* Se eu deixar um " padding: 10px; ", ele aplica esse valor para as 4 direções */
+
+            margin: auto;
+        }
+
+        #test {
+            padding: 40px 0 40px;
+            background-color: lightskyblue;
+            width: 200px;
+        }
+        
+        a {
+            border-width: 5px;
+            border-style: solid;
+            border-color: darkblue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de caixa box-level</h1>
+    <div id="test">
+        Está é uma caixa
+    </div>
+    <p>Parágrafos também são exemplos de box-level, mas os <a href="#">links são exemplo de caixar inlin-level</a>. Vamos ver como tudo isso funciona.</p>
+</body>
+</html>

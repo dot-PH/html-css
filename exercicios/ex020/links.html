@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        
+        /*  SELETORES PERSONALIZADOS
+            #   = id
+            .   = class
+            :   = pseudo-class
+            ::  = pseudo-element
+            >   = children     -- Este é aquele que quando quero pegar um elemento dentro da div por exemplo
+        */
+
+        * {
+            font-family: Arial, Helvetica, sans-serif
+        }
+
+        a {
+            color: black;
+            text-decoration: none; /* Retira todas as decorações do texto */
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkblue;
+        }
+
+        a:hover {
+            text-decoration: underline;
+            color: black;
+        }
+
+        a:active {  /* Quando eu clico esta função é ativada, neste caso deixando a fonte amarela. */
+            color: yellow;
+        }
+
+        .uni {
+            background-color: lightskyblue;
+        }
+
+        .uni::before {
+            content: '❝';
+            color: gray;
+        }
+
+        .uni::after {
+            content: '❞';
+            text-decoration: none;
+            font-weight: normal;
+            color: gray;
+        }
+    
+/*      a::before { 
+            content: '❝'; -- Deste modo eu chamo para todos os meus links. 
+            color: gray;
+        }   */
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://github.com/PHbrazilian" target="_blank">Meu GitHub</a></li>
+        <li><a href="https://www.youtube.com/@CursoemVideo" target="_blank" class="uni">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com/" target="_blank">Site do CursoemVideo</a></li>
+    </ul>
+</body>
+
+</html>

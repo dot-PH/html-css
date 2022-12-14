@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vídeos com HTML5</title>
+</head>
+<body>
+    <h1>Inserindo vídeos hospedados localmente</h1>
+    <p>Este vídeo está hospedado no meu próprio servidor.</p>
+    <!-- <video src="midia/video.mp4" width="300" controls></video> -->
+                <!--Este "poster" é para deixar uma thumb, no meu vídeo!-->
+    <video width="500" poster="imagens/cavalo.png" controls>
+        <source src="midia/video.mp4" type="video/mp4"> <!--Lembrando que a ordem que ele segue é do topo pra baixo \/-->
+        <source src="midia/video.m4v" type="video/mp4">
+        <source src="midia/video.webm" type="video/webm">
+        <source src="midia/video.ogv" type="video/ogg">
+        <p>Seu navegador não tem compatibilidade com reprodução de vídeos.</p>
+    </video>
+
+    <h1>Inserindo vídeos do YouTube</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/21mDekTZwsw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+    <h1>Inserindo vídeos do Vimeo</h1>
+    <iframe src="https://player.vimeo.com/video/767046013?h=edafcd7ab5" width="560" height="315" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+    <p><a href="https://vimeo.com/767046013">HOT FUTURE | adult swim SMALLS</a> from <a href="https://vimeo.com/adultswim">[adult swim]</a> on <a href="https://vimeo.com">Vimeo</a>.</p>
+</body>
+</html>
