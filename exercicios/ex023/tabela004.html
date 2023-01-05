@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplicando Style em Colunas</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        caption {
+            font-size: 1.6em;
+            font-weight: bold;
+            padding: 10px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 15px;
+        }
+
+        .cnome, .cidade {
+            background-color: lightblue;
+        }
+
+        .cgrupo {
+            background-color: lightskyblue;
+        }
+
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup> <!-- Para aplicar os estilos as colunas, ou seja, verticalmente. -->
+            <col class="cnome">  <!-- Normalmente é uma tag COL para cada uma das colunas. -->
+            <col class="csexo">
+            <col class="cgrupo" span="2"> <!-- Este span é para definir o meu estilo; para que ele pegue 2 colunas -->
+      <!--  <col class="cidade">
+            <col class="cprof"> -->
+        </colgroup>
+        <caption>Cadastro</caption>
+        <tr>
+            <thead>
+                <th >Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </thead>
+            <tbody>
+                <tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>F</td>
+                        <td>20</td>
+                        <td>Programador(a)</td>
+                    </tr>
+                    <tr>
+                        <td>Ana</td>
+                        <td>F</td>
+                        <td>20</td>
+                        <td>Programador(a)</td>
+                    </tr><tr>
+                        <td>Ana</td>
+                        <td>F</td>
+                        <td>20</td>
+                        <td>Programador(a)</td>
+                    </tr><tr>
+                        <td>Ana</td>
+                        <td>F</td>
+                        <td>20</td>
+                        <td>Programador(a)</td>
+                    </tr><tr>
+                        <td>Ana</td>
+                        <td>F</td>
+                        <td>20</td>
+                        <td>Programador(a)</td>
+                    </tr><tr>
+                        <td>Ana</td>
+                        <td>F</td>
+                        <td>20</td>
+                        <td>Programador(a)</td>
+                    </tr>
+                </tr>
+            </tbody>
+        </tr>
+        
+    </table>
+</body>
+</html>
